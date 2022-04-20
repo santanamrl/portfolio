@@ -40,10 +40,10 @@
     <textarea name='message' placeholder='Message' required></textarea>
     <input type='submit' value='Envoyer'>
   </form>
-</div>
   <?php
   require('testcontact.php');
   ?>
+</div>
   <footer></footer>
   </body>
   </html>

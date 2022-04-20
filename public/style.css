@@ -289,6 +289,12 @@ a:hover, a:active {
 
 }
 
+.contactForm p {
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
 .contactForm h5 {
     margin: 10px;
 }
@@ -361,4 +367,19 @@ input[type='text'], input[type='email'], textarea:focus {
         margin: auto;
         margin-top: 5px;
     }
+}
+
+@media only screen and (max-width : 1000px) {
+  
+  #contact {
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 15px;
+  }
+  .contactForm {
+      position: relative;
+      margin: auto;
+      margin-top: 5px;
+  }
+
 }
