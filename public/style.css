@@ -1,0 +1,364 @@
+/* style commun à toutes les pages */
+
+html, body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #000;
+    color: #fff;
+    overflow: auto;
+}
+
+h3 {
+    font-family: 'Playfair Display', sens-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h5 {
+    margin: 0;
+    font-family: 'Pathway Gothic One';
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+}
+
+nav {
+    font-family: 'Playfair Display', serif;
+}
+
+nav h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Pathway Gothic One';
+}
+
+a:link, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: violet;
+    text-decoration: none;
+}
+
+/* fin style commun à toutes les pages */
+
+
+.phoneView {
+    display: none;
+}
+
+/* style index.php */
+
+/* début css pour carousel */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 10px;
+    width:800px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.slide img {
+    width: 800px;
+    height: 300px;
+}
+
+.slides {
+    width: 800%;
+    height: 350px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+/* navigation manuelle */
+.manualNav {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.manualBtn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 310px;
+}
+
+.manualBtn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manualBtn:hover{
+    background: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+/* navigation automatique */
+.autoNavigation {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 310px;
+}
+
+.autoNavigation div {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.autoNavigation div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .autoNavigation .autoBtn1 {
+    background: #fff;
+}
+
+#radio2:checked ~ .autoNavigation .autoBtn2 {
+    background: #fff;
+}
+
+#radio3:checked ~ .autoNavigation .autoBtn3 {
+    background: #fff;
+}
+/* fin css pour carousel */
+
+#infos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Pathway Gothic One';
+    font-size: 20px;
+    font-weight: normal;
+}
+/* fin style index.php */
+
+/* style cv.php */
+
+#img {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#img img {
+    height: 150px;
+    width: 150px;
+}
+#bio {
+    text-align: center;
+}
+
+#bio h2 {
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+
+#bio p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    max-width: 500px;
+    min-width: 200px;
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+}
+
+#presentation p {
+    text-align: justify;
+}
+
+#formations p {
+    margin: 10px;
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+#competences p {
+    margin-top: 10px;
+    font-family: 'Pathway Gothic One';
+    font-size: 18px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.fa-brands, .fa-solid {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: .5rem;
+}
+
+/* fin style cv.php */
+
+/* style contact.php */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 20%;
+    margin-top: 59px;
+    max-width: 250px;
+    padding: 10px;
+    border: 0.5px solid #fff;
+    text-align: justify;
+    font-family: 'arial', sans-serif;
+    font-size: 15px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 50%;
+    border: 0.5px solid #fff;
+    width: 400px;
+
+}
+
+.contactForm h5 {
+    margin: 10px;
+}
+
+input[type='text'], input[type='email'], textarea {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #fff;
+    font-family: 'arial', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: black;
+}
+
+textarea {
+    height: 150px;
+    width: 375px;
+    resize: none;
+}
+
+input[type='submit'] {
+    padding: 5px;
+    margin: 5px;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+input[type='submit']:hover {
+    color: violet;
+    text-decoration: underline;
+}
+
+input[type='text'], input[type='email'], textarea:focus {
+    outline: none;
+}
+
+/* fin code contact.php */
+
+@media only screen and (max-width : 550px){
+    .carousel {
+      display: none;
+    }
+
+    .phoneView {
+      display: block;
+    }
+
+    .phoneView img {
+      height: 200px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-top: 45px;
+    }
+
+    #presentation {
+        width: 350px;
+    }
+
+    #contact {
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .contactForm {
+        position: relative;
+        margin: auto;
+        margin-top: 5px;
+    }
+}
