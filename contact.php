@@ -45,9 +45,6 @@
   require('testcontact.php');
   ?>
   </div>
-  <section id='pendu'>
-
-  </section>
   <footer></footer>
   </body>
   </html>
