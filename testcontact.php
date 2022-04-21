@@ -3,6 +3,7 @@ $emailFormat = '#[a-z0-9]{1,}[\-\_\.a-z0-9]{0,}@[a-z]{2,}[\-\_\.a-z0-9]{0,}\.[a-
 $contentFormat = '#^[a-zA-Z0-9áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\.\,\_\-\s]{5,500}$#';
 $nameFormat =  '#^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ]{5,500}$#';
 if (isset($_POST['message'])) {
+  if (isset($_POST['candy']) && empty($_POST['candy'])) {
   if (!preg_match($emailFormat, $_POST['email'])) {
     echo "<p> désolée, cet email n'est pas conforme. </p>";
     return;
@@ -21,5 +22,6 @@ if (isset($_POST['message'])) {
       echo "<p> l'e-mail a bien été envoyé.</p>";
     }
   }
+} else {return;}
 }
 ?>

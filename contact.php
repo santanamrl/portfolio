@@ -39,11 +39,15 @@
     <input type='text' name='sujet' placeholder='Sujet' required>
     <textarea name='message' placeholder='Message' required></textarea>
     <input type='submit' value='Envoyer'>
+    <input type="hidden" name="candy">
   </form>
   <?php
   require('testcontact.php');
   ?>
-</div>
+  </div>
+  <section id='pendu'>
+
+  </section>
   <footer></footer>
   </body>
   </html>
