@@ -31,20 +31,6 @@
         <br><strong>E-mail</strong> : santanamrl.06@gmail.com
         <br><strong>Adresse</strong> : 26 rue de la Buffa, 06000 Nice, France</p>
   </section>
-  <div class="contactForm">
-  <h5>Ou envoyez-moi un message</h5>
-  <form name='contactform' action= 'contact.php' method='post'>
-    <input type='text' name='nom' placeholder='Nom' required>
-    <input type='email' name='email' placeholder='Email' required>
-    <input type='text' name='sujet' placeholder='Sujet' required>
-    <textarea name='message' placeholder='Message' required></textarea>
-    <input type='submit' value='Envoyer'>
-    <input type="hidden" name="candy">
-    <?php
-    require('testcontact.php');
-    ?>
-  </form>
-  </div>
   <footer></footer>
   </body>
   </html>
