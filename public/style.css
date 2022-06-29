@@ -278,7 +278,7 @@ a:hover, a:active {
     font-size: 15px;
 }
 
-.contactForm {
+/* .contactForm {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -331,7 +331,7 @@ input[type='submit']:hover {
 
 input[type='text'], input[type='email'], textarea:focus {
     outline: none;
-}
+} */
 
 /* fin code contact.php */
 
