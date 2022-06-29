@@ -21,7 +21,6 @@
           <li><a href="cv.php">à propos</a></li>
           <li><a href="https://github.com/santanamrl" target="_blank">github</a></li>
           <li><a href="https://www.linkedin.com/in/marilou-santana-914810230/" target="_blank">linkedin</a></li>
-          <li><a href="contact.php">contact</a></li>
         </ul>
       </nav>
     </header>
