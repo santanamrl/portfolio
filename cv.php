@@ -76,7 +76,7 @@
       <div id='lol'>
         <p> mais le plus important... </p>
         <section id='img-rank'>
-          <img src="public/Screen-Shot-2019-12-08-at-2.24.15-AM.png" alt="">
+          <img src="public/rank.png" alt="">
       </section>
         <p> j'suis diamant III sur League of Legends WildRift </p>
       </div>
