@@ -73,13 +73,13 @@
         <h5>mais aussi...</h5>
         <p> LARAGON | LAMP | PHOTOSHOP | PROCREATE | SUITE OFFICE </p>
       </section>
-      <div id='lol'>
+       <!-- <div id='lol'>
         <p> mais le plus important... </p>
         <section id='img-rank'>
           <img src="public/rank.png" alt="">
       </section>
         <p> j'suis diamant III sur League of Legends WildRift </p>
-      </div>
+      </div> -->
     </main>
     <footer></footer>
   </body>
